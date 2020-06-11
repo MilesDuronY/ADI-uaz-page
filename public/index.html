@@ -11,9 +11,21 @@
     	.nav-uaz{
     		background-color: #012A62;
     	}
-    	.navbar-brand{
+    	/*.navbar-brand{
     		color: #d7b87f!important;
+    	}*/
+    	.card-header{
+    		background-color: #012A62;
+    		color: #FFFFFF;
+    		border-bottom: #d7b87f 7px solid;
+    		border-radius: 0;
     	}
+    	.card{
+    		border-radius: 0;
+    	}
+    	.card-header:first-child {
+		    border-radius: 0;
+		}
     </style>
 
 	<title>MCPI</title>
@@ -21,10 +33,10 @@
 <body>
 <!--Banner-->
 <header>
-	<div class="container">
+	<div class="container-fluid">
 		<div class="row">
 			<div class="col-12">
-				<img src="images/Banner.fw.png" class="img-fluid" >
+				<img src="images/Banner.fw.png" class="img-fluid" width="100%">
 
 			</div>
 		</div>
@@ -61,79 +73,117 @@
 	</div>
 </div>
 <!-- Menu de navegacion-->
+<!-- navegacion 2-->
+<div class="container">
+	<div class="row">
+		<div class="col-12">
+			<nav class="navbar navbar-expand-sm navbar-dark bg-primary ">
+				<div class="container">
+					<a class="navbar-brand mr-auto" href="#">
+						<img src="images/sep.png">
+					</a>
+					<button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar">
+						<span class="navbar-toggler-icon"></span>
+					</button>
+					
+					<div class="collapse navbar-collapse justify-content-between" id="navbar">
+						<ul class="navbar-nav">
+							<li class="nav-item "><a class="nav-link" href="#">Home</a></li>
+							<li class="nav-item active"><a class="nav-link" href="#">About Us</a></li>
+							
+						</ul>
+						<ul class="navbar-nav">
+							<li class="nav-item"><a class="nav-link" href="#">Login</a></li>
+						</ul>
+					</div>
+				</div>
+			</nav>
+		</div>
+	</div>
+</div>
+<!-- navegacion 2-->
 
 <!-- Carrousel-->
-<div>
-	<div>
-		<div>
-			<h1>Carrousel</h1>
+<div class="container">
+	<div class="row">
+		<div class="col-12">
+			<div id="carousel" class="carousel slide" data-ride="carousel">
+				<div class="carousel-inner">
+					<div class="carousel-item active">
+						<img class="w-100" src="images/Carrrucel-1.gif">
+					</div>
+					<div class="carousel-item">
+						<img src="images/Carrrucel-2.gif" width="100%">
+					</div>
+				</div>
+			</div>
 		</div>
 	</div>
 </div>
 <!-- Carrousel-->
 
 <!-- links-->
-<div>
-	<div>
-		<div>
-			<div>
-				<h5 >MCPI</h5>
-				<div>
-					<ul>
-						<li>
-							<a href="#">Presentación</a>
+<div class="container">
+	<div class="row">
+		<div class="col-12 col-sm-6 col-md-4">
+			<div class="card">
+				<h5 class="card-header text-center">MCPI</h5>
+				<div class="card-body">
+					<ul class="nav flex-column">
+						<li class="nav-item">
+							<a class="nav-link" href="#">Presentación</a>
 						</li>
-						<li>
-							<a href="#">Misión</a>
+						<li class="nav-item">
+							<a class="nav-link" href="#">Misión</a>
 						</li>
-						<li>
-							<a href="#">Visión</a>
+						<li class="nav-item">
+							<a class="nav-link" href="#">Visión</a>
 						</li>
-						<li>
-							<a href="#"  aria-disabled="true">Objetivos</a>
-						</li>
-					</ul>
-				</div>
-			</div>
-		</div>
-		<div>
-			<div>
-				<h5 >Plan de Estudios</h5>
-				<div>
-					<ul>
-						<li>
-							<a href="#">Síntesis del plan de estudios</a>
-						</li>
-						<li>
-							<a href="#">Perfil de ingreso | Requisitos</a>
-						</li>
-						<li>
-							<a href="#">Requisitos de permanencia</a>
-						</li>
-						<li>
-							<a href="#"  aria-disabled="true">Perfil de egreso | Requisitos</a>
-						</li>
-						<li>
-							<a href="#"  aria-disabled="true">Modalidad y dedicación</a>
+						<li class="nav-item">
+							<a class="nav-link" href="#"  aria-disabled="true">Objetivos</a>
 						</li>
 					</ul>
 				</div>
 			</div>
 		</div>
-		<div>
-			<div>
-				<h5 >LGAC | Laboratorios</h5>
-				<div>
-					<ul>
+		<div class="col-12 col-sm-6 col-md-4">
+			<div class="card">
+				<h5 class="card-header text-center">Plan de Estudios</h5>
+				<div class="card-body">
+					<ul class="nav flex-column">
+						<li class="nav-item">
+							<a class="nav-link" href="#">Síntesis del plan de estudios</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">Perfil de ingreso | Requisitos</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">Requisitos de permanencia</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#"  aria-disabled="true">Perfil de egreso | Requisitos</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#"  aria-disabled="true">Modalidad y dedicación</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="col-12 col-sm-6 col-md-4">
+			<div class="card">
+				<h5 class="card-header text-center">LGAC | Laboratorios</h5>
+				<div class="card-body">
+					<ul class="nav flex-column">
 
-						<li>
-							<a href="#">Procesamiento y análisis de datos</a>
+						<li class="nav-item">
+							<a class="nav-link" href="#">Procesamiento y análisis de datos</a>
 						</li>
-						<li>
-							<a href="#">Laboratorios</a>
+						<li class="nav-item">
+							<a class="nav-link" href="#">Laboratorios</a>
 						</li>
-						<li>
-							<a href="#"  aria-disabled="true">Colaboración | Vinculación | Socios estratégicos</a>
+						<li class="nav-item">
+							<a class="nav-link" href="#"  aria-disabled="true">Colaboración | Vinculación | Socios estratégicos</a>
 						</li>
 					</ul>
 				</div>
@@ -312,5 +362,10 @@
 <script src="/js/jquery.slim.min.js"></script>
 <script src="/js/umd/popper.min.js"></script>
 <script src="/js/bootstrap.min.js"></script>
+<script type="text/javascript">
+	$('#carousel').carousel({
+		interval:2500
+	})
+</script>
 </body>
 </html>
