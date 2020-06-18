@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="stylesheets/style.css">
+    <style type="text/css">
+    	.nav-uaz{
+    		background-color: #012A62;
+    	}
+    	/*.navbar-brand{
+    		color: #d7b87f!important;
+    	}*/
+    	.card-header{
+    		background-color: #012A62;
+    		color: #FFFFFF;
+    		border-bottom: #d7b87f 7px solid;
+    		border-radius: 0;
+    	}
+    	.card{
+    		border-radius: 0;
+    	}
+    	.card-header:first-child {
+		    border-radius: 0;
+		}
+		.nav-link{
+			padding-top: 1px;
+			padding-bottom: 1px;
+			color:#000000;
+		}
+		.nav-link:hover{
+			color:#d7b87f;
+		}
+		footer .row{
+			background-color: #012A62;
+		}
+		footer .nav-link{
+			color:#FFFFFF;
+		}
+    </style>
+
+	<title>MCPI</title>
+</head>
+<body>
+    <%- include('header',{page:page}) -%>
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <ul class="nav flex-column">
+                <% ligas.forEach(function(liga) { %>
+                    <li><a class="nav-link" href="<%= liga %>"><%= liga %></a></li>
+
+                <% }) %>
+            </ul>
+            </div>
+        </div>
+        
+    </div>
+   <%- include('footer') -%> 
+<script src="/js/jquery.slim.min.js"></script>
+<script src="/js/umd/popper.min.js"></script>
+<script src="/js/bootstrap.min.js"></script>
+</body>
+</html>
